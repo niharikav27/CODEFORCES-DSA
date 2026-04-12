@@ -10,22 +10,22 @@ int main() {
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
 
-            int black = 0;
-            int white = 0;
+            int b = 0;
+            int w = 0;
 
-            if(a[i][j] == '#') black++;
-            else white++;
+            if(a[i][j] == '#') b++;
+            else w++;
 
-            if(a[i][j+1] == '#') black++;
-            else white++;
+            if(a[i][j+1] == '#') b++;
+            else w++;
 
-            if(a[i+1][j] == '#') black++;
-            else white++;
+            if(a[i+1][j] == '#') b++;
+            else w++;
 
-            if(a[i+1][j+1] == '#') black++;
-            else white++;
+            if(a[i+1][j+1] == '#') b++;
+            else w++;
 
-            if(black >= 3 || white >= 3){
+            if(b >= 3 || w>= 3){
                 cout << "YES";
                 return 0;
             }
