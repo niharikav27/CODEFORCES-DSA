@@ -10,6 +10,6 @@ int main(){
     if(k <= oddCount){
         cout << (2*k - 1);
     } else {
-        cout << 2*(k - oddCount);
+        cout << 2*(k-oddCount);
     }
 }
